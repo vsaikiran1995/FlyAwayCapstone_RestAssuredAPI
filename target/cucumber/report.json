@@ -1,0 +1,191 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-03T11:00:50.630Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7835150400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "create new user registration",
+        "description": "",
+        "id": "create-new-user-registration-using-restassured-and-use-the-same-user-to-login-from-ui;create-new-user-registration",
+        "after": [
+          {
+            "result": {
+              "duration": 342926600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1764628400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "As a user I navigate to new user register webpage",
+            "match": {
+              "location": "stepDef.registerUserStepDef.as_a_user_I_navigate_to_new_user_register_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1856676600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "As a user I will register using following details",
+            "match": {
+              "location": "stepDef.registerUserStepDef.as_a_user_I_will_register_using_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user05@user05.com"
+                ]
+              },
+              {
+                "cells": [
+                  "user05"
+                ]
+              },
+              {
+                "cells": [
+                  "user05"
+                ]
+              },
+              {
+                "cells": [
+                  "user05"
+                ]
+              },
+              {
+                "cells": [
+                  "user05"
+                ]
+              },
+              {
+                "cells": [
+                  "user05"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-03T11:01:02.548Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2552017300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "login with registered credentials from UI",
+        "description": "",
+        "id": "create-new-user-registration-using-restassured-and-use-the-same-user-to-login-from-ui;login-with-registered-credentials-from-ui",
+        "after": [
+          {
+            "result": {
+              "duration": 253808700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 274010300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "As a user I navigate to flyaway login page",
+            "match": {
+              "location": "stepDef.registerUserStepDef.as_a_user_I_navigate_to_flyaway_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 785458800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "As a user I will login username as \"user05@user05.com\" and password as \"user05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user05@user05.com\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"user05\"",
+                  "offset": 71
+                }
+              ],
+              "location": "stepDef.registerUserStepDef.as_a_user_I_will_login_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124993200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Validate logged in successfully",
+            "match": {
+              "location": "stepDef.registerUserStepDef.validate_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "create new user registration using restAssured and use the same user to login from UI",
+    "description": "",
+    "id": "create-new-user-registration-using-restassured-and-use-the-same-user-to-login-from-ui",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/registerUesr.feature",
+    "tags": []
+  }
+]
